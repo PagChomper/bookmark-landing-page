@@ -1,0 +1,82 @@
+@import "../normalize";
+@import "../variables";
+
+.contact {
+  background: $primary-soft-blue;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #fff;
+
+  &__count {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    margin-top: 0;
+  }
+
+  &__form {
+    margin-top: 3rem;
+    padding: 0 1.1rem;
+    &__input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 1.4rem 2rem;
+      border-radius: 0.5rem;
+      border: none;
+
+      &::placeholder {
+        font-size: 1.6rem;
+        color: lightgrey;
+      }
+    }
+
+    &__submit {
+      display: block;
+      width: 100%;
+      margin-top: 1.6rem;
+      padding: 1.4rem 2rem;
+      border: none;
+      background: $primary-soft-red;
+      font-size: 1.6rem;
+      color: #fff;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    padding: 6rem 48rem;
+
+    &__count {
+      font-size: 1.6rem;
+      margin-top: 0;
+    }
+
+    &__title {
+      font-size: 3.2rem;
+      margin-top: 3rem;
+    }
+
+    &__form {
+      &__input {
+        width: 65%;
+        margin-right: 2rem;
+        font-size: 1.8rem;
+        padding: 1.6rem auto;
+      }
+
+      &__submit {
+        display: inline-block;
+        width: 30%;
+        font-size: 1.8rem;
+        padding: 1.6rem auto;
+        white-space: nowrap;
+      }
+    }
+  }
+}

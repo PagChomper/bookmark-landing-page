@@ -1,0 +1,151 @@
+@import "../normalize";
+@import "../variables";
+
+.header {
+  &--extra {
+    padding-top: 14.5rem;
+  }
+  padding: 4rem 0;
+  &__img {
+    width: 100%;
+    z-index: 30;
+    position: relative;
+
+    &__banner {
+      position: absolute;
+      height: 20rem;
+      background: $primary-soft-blue;
+      width: 21rem;
+      right: 0;
+      bottom: 0rem;
+      z-index: 1;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 17rem;
+        height: 17rem;
+        left: -8.8rem;
+        bottom: 0;
+        background: $primary-soft-blue;
+        z-index: 2;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  &__img_container {
+    padding: 0 1rem;
+    position: relative;
+  }
+
+  &__text {
+    padding: 0 4rem;
+    text-align: center;
+    margin-top: 4rem;
+
+    &__title {
+      font-size: 3rem;
+      line-height: 4.4rem;
+      color: $neutral-very-dark-blue;
+    }
+
+    &__desc {
+      font-size: 1.5rem;
+      color: $neutral-grayish-blue;
+      line-height: 2.4rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    &__btn {
+      padding: 1.5rem 1.8rem;
+      color: #fff;
+      font-size: 1.4rem;
+      border-radius: 0.5rem;
+      margin-top: 2rem;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+
+    .btn-chrome {
+      background: $primary-soft-blue;
+    }
+
+    .btn-firefox {
+      color: black;
+      background: #f7f7f7;
+      box-shadow: 0 4px 5px -3px $neutral-grayish-blue;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 5rem 0rem 5rem 16rem;
+
+    &__img {
+      width: 65.7rem;
+
+      &__banner {
+        height: 33rem;
+        width: 37rem;
+        bottom: -2rem;
+
+        &::before {
+          width: 29rem;
+          height: 29rem;
+          left: -13.9rem;
+          background: $primary-soft-blue;
+        }
+      }
+    }
+
+    &__btns {
+      display: flex;
+      justify-content: left;
+      margin-top: 1rem;
+
+      .btn-chrome {
+        margin-right: 2rem;
+      }
+    }
+
+    &__text {
+      text-align: left;
+      padding: 0;
+      width: 50rem;
+      margin-top: 5rem;
+
+      &__desc {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+      }
+
+      &__title {
+        font-size: 4.8rem;
+        line-height: 5.5rem;
+        margin-bottom: 0;
+        font-weight: 500;
+      }
+    }
+    &-grid {
+      display: grid;
+      grid-template-columns: 40%, 60%;
+      grid-template-rows: 1fr;
+
+      &__right {
+        grid-column: 2;
+      }
+
+      &__left {
+        grid-row: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import "../normalize";
+@import "../variables";
+
+.ql {
+  padding: 5rem 3rem 10rem 3rem;
+
+  &__info {
+    padding: 1.6rem 2rem;
+    background: $primary-soft-blue;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 0.5rem;
+  }
+
+  .flex {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text {
+    text-align: center;
+
+    &__title {
+      font-size: 2.4rem;
+      color: $neutral-very-dark-blue;
+    }
+
+    &__desc {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+      color: $neutral-grayish-blue;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ql {
+    padding: 10rem 45rem;
+
+    &__text {
+      border-bottom: 1px solid $neutral-grayish-blue;
+      padding-bottom: 4rem;
+      &__title {
+        font-size: 3.2rem;
+      }
+
+      &__desc {
+        font-size: 1.8rem;
+      }
+    }
+
+    .flex {
+      margin-top: 6rem;
+    }
+  }
+}

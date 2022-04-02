@@ -1,0 +1,55 @@
+@import "../normalize";
+@import "../variables";
+
+.questions {
+  border-bottom: 1px solid $neutral-grayish-blue;
+  &__q {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+    color: $neutral-very-dark-blue;
+    font-weight: 100;
+  }
+
+  &__arrow {
+    transition: 0.5s all ease-out;
+  }
+
+  &__arrow-open {
+    transform: rotate(180deg);
+    filter: hue-rotate(90deg);
+    transition: 0.5s all ease-out;
+  }
+
+  &__a {
+    &__desc {
+      font-size: 1.4rem;
+      line-height: 3rem;
+      color: $neutral-grayish-blue;
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .questions {
+    &__title {
+      font-size: 1.8rem;
+
+      &:hover {
+        color: $primary-soft-red;
+      }
+    }
+
+    &__a {
+      &__desc {
+        font-size: 1.65rem;
+        line-height: 3.2rem;
+      }
+    }
+  }
+}
