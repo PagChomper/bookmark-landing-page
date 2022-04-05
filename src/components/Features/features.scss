@@ -47,14 +47,26 @@
     .bookmark {
       border-top: 1px solid $neutral-grayish-blue;
       border-bottom: 1px solid $neutral-grayish-blue;
+      
+      &:hover {
+        color: $primary-soft-red;
+      }
     }
 
     .searching {
       border-bottom: 1px solid $neutral-grayish-blue;
+
+      &:hover {
+        color: $primary-soft-red;
+      }
     }
 
     .easy {
       border-bottom: 1px solid $neutral-grayish-blue;
+
+      &:hover {
+        color: $primary-soft-red;
+      }
     }
   }
 }

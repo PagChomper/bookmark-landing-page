@@ -10,6 +10,13 @@
     text-decoration: none;
     color: #fff;
     border-radius: 0.5rem;
+
+    &:hover {
+      padding: 1.4rem 1.8rem;
+      background: transparent;
+      border: 2px solid $primary-soft-blue;
+      color: $primary-soft-blue;
+    }
   }
 
   .flex {

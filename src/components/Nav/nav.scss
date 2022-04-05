@@ -98,6 +98,10 @@
       margin-right: 4rem;
       font-size: 1.2rem;
       color: $neutral-very-dark-blue;
+
+      &:hover {
+        color: $primary-soft-red;
+      }
     }
 
     &__login {
@@ -107,6 +111,13 @@
       color: #fff;
       font-weight: 500;
       font-size: 1.2rem;
+
+      &:hover {
+        background: transparent;
+        border: 2px solid $primary-soft-red;
+        color: $primary-soft-red;
+        padding: 1.2rem 3.8rem;
+      }
     }
   }
 }

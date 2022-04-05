@@ -75,12 +75,26 @@
 
     .btn-chrome {
       background: $primary-soft-blue;
+
+      &:hover {
+        background: transparent;
+        border: 2px solid $primary-soft-blue;
+        padding: 1.3rem 1.6rem;
+        color: $primary-soft-blue;
+      }
     }
 
     .btn-firefox {
       color: black;
       background: #f7f7f7;
       box-shadow: 0 4px 5px -3px $neutral-grayish-blue;
+
+      &:hover {
+        border: 2px solid black;
+        padding: 1.3rem 1.6rem;
+        box-shadow: none;
+        background: white;
+      }
     }
   }
 }

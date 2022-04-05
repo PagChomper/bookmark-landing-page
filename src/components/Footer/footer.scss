@@ -19,6 +19,10 @@
     &__item {
       color: lightgrey;
       text-transform: uppercase;
+
+      &:hover {
+        color: $primary-soft-red;
+      }
     }
   }
 

@@ -110,6 +110,13 @@
         text-decoration: none;
         font-size: 1.6rem;
         border-radius: 0.5rem;
+
+        &:hover {
+          border: 2px solid $primary-soft-blue;
+          padding: 1.4rem 2rem;
+          background: transparent;
+          color: $primary-soft-blue;
+        }
       }
     }
 

@@ -44,6 +44,13 @@
       font-size: 1.6rem;
       color: #fff;
       border-radius: 0.5rem;
+
+      &:hover {
+        padding: 1.2rem 1.8rem;
+        background: white;
+        border: 2px solid $primary-soft-red;
+        color: $primary-soft-red;
+      }
     }
   }
 }
